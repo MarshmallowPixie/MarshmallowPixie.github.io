@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>NukeMeBae!</title>
+      <style>
+        body {
+          text-align:center;
+          background-image: url("https://wallpaperscraft.com/image/pile_texture_light_blue_82463_1920x1080.jpg");
+          background-color: #cccccc;
+          background-repeat: repeat;
+          background-attachment: fixed;
+        }
+        canvas {
+          border: solid white 5px;
+          background-color: black;
+          opacity:0.7;
+        }
+        img {
+          width: 70%;
+        }
+        button {
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 5px;
+          border: solid black 1px;
+          color: black;
+        }
+        #button1 {
+          background-color:#00e600;
+        }
+        #button2 {
+          background-color:#ffff00;
+        }
+        #button3 {
+          background-color:#ff6600;
+        }
+        #button4 {
+          background-color:#ff0000;
+        }
+        #button5 {
+          background-color:#cc0099;
+        }
+        button:hover {
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+
+        // = crash browser
+
+        function end() {
+          for (;;) {}
+        }
+
+        //Coin Flip
+
+        function coin() {
+          var flipping = document.getElementById("button4");
+          button4.innerHTML = "Flipping...";
+          setTimeout(function () {
+            var random = Math.random()
+            if(random < 0.50) {
+              var heads = document.getElementById("button4");
+              button4.innerHTML = "Heads!";
+            } else {
+              var tails = document.getElementById("button4");
+              button4.innerHTML = "Tails!";
+            }
+          }, 1000);
+        }
+
+        // Random Game
+
+        function startGame() {
+          var random = Math.random();
+          var lol = prompt("Would you like to play a little javescript game I made?","y / n").toLowerCase();
+          if(lol === "y") {
+            alert("The Story may change if you replay.")
+
+            // Random Game : Mine Turtle
+
+            if(random < 0.33) {
+              var thing = prompt("On your way home from taco bell (aftor eating an amazing amout of burettos) you see a turtle on the sidewalk. What will you do?","run / kick / lick").toLowerCase();
+              if(thing === "run") {
+                alert("Why are you running from a- OH MY GOD EVERYTHING JUST EXPLODED!!!");
+                alert("Lol mine turtles :D")
+              } else {
+                alert("You shouldn't have done that. because the turtle was literaly a bomb 0_0");
+                alert("You died :P");
+                alert("You Got The Dead Ending.")
+              }
+              } else if(random < 0.66) {
+
+                // Random Game : Deepin Game
+
+                var user = prompt("Go deeper into the rabit hole?","y / n / option4 / fly").toLowerCase();
+                switch(user) {
+                case 'y':
+                var help = prompt("You wander threw door after door untill you find yourself hanging out with some fuzzy creature. It seem it wants ya to scratch behind it antenas. Will you scratch behind the creature's antenas?","y / n").toLowerCase();
+                var share = prompt("Will you give it some food","y / n").toLowerCase();
+                if(help === "y" && share === "y") {
+                    alert("You made some fluffy creature very happy.")
+                    alert("Happy Ending!")
+                    alert("You and Fuzzle Fluff travel to the land of ooo and have crazy cray disco dance parties ery night with the freaky freaks and monsters.")
+                } else {
+                    alert("Da duff brefro! did you not see that things adorible FLUFF! It's fluff was made out of pure happiness!");
+                    alert("Ya know what no!")
+                    alert("You could have done more for the fluffy thing.")
+                    alert("You get the sad ending...")
+                }
+                break;
+                case 'n':
+                alert("OK, that's fine you don't want to play my game, but unless you know the magic word there is no stoping this train.");
+                var blue = prompt("What's the magic word?").toLowerCase();
+                    if(blue === "please") {
+                        alert("I'm not sure where that train thing came from, but let's just forget about that and move on.");
+                        alert("Anyway you take your disco stick and pown the scary monsters and teach the nice sprites to dance.")
+                        // alert("")
+
+
+
+                        
+                        alert("Whoa that was random even for me :D")
+                        alert("You Got The MOST Random Ending")
+                    } else {
+                        alert("Really?! You don't know the magic word?!")
+                        alert("It's please ^_^")
+                        alert("You lost, I mean kind of. You really can't loose this game bacause all ending are intentional.")
+                        alert("I know you've allready 'lost' and stuff, but I just wanted to tell you something. You see most of the javascript I wrote for this webpage I wrote when I was first learning how to code. Like Russain Roulette and most of the main game.")
+                        alert("Anyways in this code I found something that was writen as a comment so it wouldn't run.")
+                        alert("This comment said 'You Never escaped, but you did eventualy fall in love with a mushroom named Sussey'")
+                        //alert("You Never escaped, but you did eventualy fall in love with a mushroom named Sussey");
+                        alert("I have no idea what I wrote that for, but it made me laugh. :D")
+                        alert("Deja Vu Ending")
+                    }
+                break;
+                case 'fly':
+                var random = Math.random();
+                var viny = prompt("You flip a coin to see if you can fly.","heads / tails").toLowerCase();
+                if(random < 0.50 && viny === "heads" || viny === "tails") {
+                    alert("You can fly now!");
+                    alert("You use your newly found powers to travle the world collecting silly trinkets at all the... trinket stores.")
+                    alert("You Got The FLY Ending!")
+                    alert("You see what I did there ^_^")
+                } else {
+                    alert("Error Error Error");
+                    alert("Hey... it's bata!")
+                    alert("01001001 00100000 01110111 01101111 01101110 01100100 01100101 01110010 00100000 01101001 01100110 00100000 01100001 01101110 01111001 01101111 01101110 01100101 00100000 01110111 01101001 01101100 01101100 00100000 01110100 01110010 01100001 01101110 01110011 01101100 01100001 01110100 01100101 00100000 01110100 01101000 01101001 01110011 00100000 Ending")
+                }
+                break;
+                case 'option4':
+                alert("You have chosen to break the fourth wall. You break the camera and crawl through the TV. The TV you crawled through Belongs to Morgan Freeman.");
+                alert("You get a selfie with Morgan Freeman.")
+                alert("You got the Morgan Freeman ending!")
+                break;
+                default:
+                alert("Yu Lusee Fr havim tribl splin");
+                }
+
+              // Random Game : Lord Bunbun
+
+              } else {
+                alert("this is the story of a tree.");
+                alert("I'm joking. That would be really boring :D");
+                alert("Rather I will tale ye the tale of Simon the archer. simon was a assassin for the king of.... Ninjas.... Uh... YES! The king of ninjas!(I did not just make that up.) One day the king... of ninjas gave simon a very important assinment.")
+                alert("Simon was to assassinate the king of the junk hill yard.(Who is bad)(and also a bunny)(also loves tennis) Anyhoo you decide to climb the tallest tree in all the lands to get a good shot.");
+                var liv_or_die = prompt("Will you assassinate the evil bunny lord","y / n").toLowerCase();
+                if(liv_or_die === "y") {
+                  var random1 = Math.random();
+                  if(random1 < 0.50) {
+                    alert("Aftor like 5min of air time the arrow finaly hits it's target. I mean like seriously you were like really far away. Like in that scene in the movie wanted. I mean the arrow flew threw a top hat a hay bail and a big loly pop some kid was holding!");
+                    alert("Do you feel good about what you've done?")
+                    alert("Do you?")
+                    alert("You will get no cake for this! None!")
+                    alert("Sad... cakeless... ending....")
+                  } else {
+                    alert("You missed...")
+                    alert("Well of corse you missed! You tryed to shoot him from half way accross the world!")
+                    alert("For trying to killing Lord Bunbun don't get any cake.")
+                    alert("You got a cakeless ending.")
+                  }
+              } else {
+                prompt("You decide mabye the bunny over lord isn't that bad so you head over to his kingdom. The evil bunny god invites you in to his castle and offers you a muffin(made out of spiders) will you eat it?","y / n / potato");
+                alert("You eat the spidery muffin(it wasn't really multible choice >:)")
+                alert("You and MrBunny Jesusson play a game of tenis and become good friends. Eventuraly Simon Evil Bunnyington and the Ninja king all became the best of friends. They all lived happily ever aftor.");
+                alert("You Got The Ending With Cake!")
+              }
+            }
+          } else {}
+        }
+
+        //Russian Roulette
+
+        function Roulette() {
+        var lv1 = prompt("Will You Play Russian Roulette?","y / n").toLowerCase();
+        var math = Math.random();
+
+        if(lv1 === "y" && math > 0.166) {
+        alert("YAY You Didn't Die On The first Round! That Would Have Been Embarrassing!");
+        var lv2 = prompt("Round 2?","y / n").toLowerCase();
+
+        if(lv2 === "y" && math > 0.322) {
+        alert("Congrats On Not Shooting Your Self! \
+        Agian...");
+        var lv3 = prompt("Round 3?","y / n").toLowerCase();
+
+        if(lv3 === "y" && math > 0.488) {
+        alert("Still alive :D");
+        var lv4 = prompt("Round 4?","y / n").toLowerCase();
+
+        if(lv4 === "y" && math > 0.644) {
+          alert("You Lived");
+          var lv5 = prompt("Round 5?","y / n").toLowerCase();
+
+        if(lv5 === "y" && math > 0.800) {
+          alert("You Lived");
+          var lv6 = prompt("Round 6?","y / n").toLowerCase();
+
+        if(lv6 === "y") {
+          alert("You Dumb Ass Revarlers Only Have 6 Chambers! You Shot Your Self In The Head!");
+        } else {
+          alert("You Win! And Your Now A Total Bad Ass!");
+        }
+
+        } else if(math < 0.800) {
+          alert("You win! Opps no wait your dead.... Yeah Your Realy Dead... There's.... There's Like Brains All Over The Wall And Stuff.");
+        } else if(lv5 === "n") {
+          alert("opt uot")
+        } else {
+          alert("You win! Opps no wait your dead.... Yeah Your Realy Dead... There's.... There's Like Brains All Over The Wall And Stuff.")
+        }
+
+        } else if(math < 0.644) {
+          alert("You Shot your Self. This Would Be Realy Tragic If this where Not A Game.");
+        } else if(lv4 === "n") {
+          alert("op out")
+        } else {
+          alert("You Shot your Self. This Would Be Realy Tragic If this where Not A Game.")
+        }
+
+        } else if(math < 0.488) {
+          alert("BOOM HEADSHOT!!");
+        } else if(lv3 === "n") {
+          alert("U Opt out")
+        } else {
+          alert("BOOM HEADSHOT!!")
+        }
+
+        } else if(math < 0.322) {
+          alert("Your Head Explodes Epicly!!")
+        } else if(lv2 === "n") {
+          alert("You Can Now Honestly Say You Played Russain Roulette.");
+        } else {
+          alert("Your Head Explodes Epicly!!")
+        }
+
+        } else if(math < 0.166) {
+          alert("Aaaaaaand Your Dead... That's Anticlimatic.")
+        } else if(lv1 === "n") {
+          alert("You Win By Not Playing! You So Smart")
+        } else {
+          alert("Aaaaaaand Your Dead... That's Anticlimatic.");
+        }
+      }
+
+      // Booty Mode
+
+      document.addEventListener("keydown", keyDownHandler, false);
+      document.addEventListener("keyup", keyUpHandler, false);
+
+      var six = false;
+      var nine = false;
+      var octiv = false;
+
+      function keyDownHandler(e) {
+          if(e.keyCode == 54) {
+              six = true;
+          }
+          else if(e.keyCode == 57) {
+              nine = true;
+          }
+          if (six == true && nine == true) {
+            six = false;
+            nine = false;
+            if (octiv == false) {
+               document.body.style.backgroundImage = "url('http://wallpaperstyle.com/wallpapers/blue-panties/download/1920x1080.jpg')";
+               octiv = true;
+             } else {
+                document.body.style.backgroundImage = "url('https://wallpaperscraft.com/image/pile_texture_light_blue_82463_1920x1080.jpg')";
+                octiv = false;
+             }
+          }
+      }
+
+      function keyUpHandler(e) {
+          if(e.keyCode == 54) {
+              six = false;
+          }
+          else if(e.keyCode == 57) {
+              nine = false;
+          }
+      }
+
+        // document.body.innerHTML = "";
+
+        // var para = document.createElement("p");
+        // var node = document.createTextNode("This is new.");
+        // para.appendChild(node);
+
+        // var element = document.getElementById("mint");
+        // element.appendChild(para);
+
+        // document.location.reload();
+
+      // timer
+
+      var myVar = setInterval(myTimer, 1000);
+
+      function myTimer() {
+          var d = new Date();
+          document.getElementById("time").innerHTML = d.toLocaleTimeString();
+      }
+      </script>
+      <h1 id="mint">Hello Friend!</h1>
+      <button id="button1" type="button" onclick="startGame()">Play</button>
+      <button id="button2" type="button" onclick="Roulette()">Russian Roulette</button>
+      <button id="button4" type="button" onclick="coin()">Coin Flip</button>
+      <button id="button5" type="button" onclick="end()" >Crash</button>
+      <p></p>
+      <div class="dropdown">
+        <span><small>secrets</small></span>
+        <div class="dropdown-content">
+          <h1>The Magic Word Is Please</h1>
+        </div>
+      </div>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=qRC4Vk6kisY">
+      <img src="http://pngimg.com/upload/rainbow_PNG5586.png"/>
+      </a>
+      <h2 id="time"></h2>
+      <h2>The time according to your device.</h2>
+      <canvas id="myCanvas" width="720" height="599"></canvas>
+      <p></p>
+      <button id="button3" type="button" onclick="nuke()">Play</button>
+      <p> </p>
+    </body>
+    <script type="text/javascript">
+
+      function nuke() {
+
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var random0 = Math.random();
+        var random1 = Math.random();
+        var random2 = Math.random();
+        var random3 = Math.random();
+        var random4 = Math.random();
+        var random5 = Math.random();
+        var ballRadius = 20;
+        var paddleHeight = 10;
+        var paddleWidth = 75;
+        var paddleX = (canvas.width-paddleWidth)/2;
+        var rightPressed = false;
+        var leftPressed = false;
+        var enter = false;
+        var score = 0;
+        var win = 0;
+        var lives = 3;
+        // ball 0
+        var x = canvas.width/2;
+        var y = canvas.height-30;
+        if(random0 < 0.50) {
+          var dx = 1;
+        } else {
+          var dx = 2;
+        }
+        if(random1 < 0.50) {
+          var dy = 1;
+        } else {
+          var dy = 2;
+        }
+        // ball 1
+        var x1 = canvas.width/2;
+        var y1 = canvas.height-30;
+        if (random2 < 0.50) {
+          var dx1 = -1;
+        } else {
+          var dx1 = -2;
+        }
+        if (random3 < 0.50) {
+          var dy1 = -1;
+        } else {
+          var dy1 = -2;
+        }
+        // ball 2
+        var x2 = canvas.width/2;
+        var y2 = canvas.height-30;
+        if (random4 < 0.50) {
+          var dx2 = -1;
+        } else {
+          var dx2 = -2;
+        }
+        if (random5 < 0.50) {
+          var dy2 = -1;
+        } else {
+          var dy2 = -2;
+        }
+
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+
+        function keyDownHandler(e) {
+            if(e.keyCode == 39) {
+                rightPressed = true;
+            }
+            else if(e.keyCode == 37) {
+                leftPressed = true;
+            }
+            else if (e.keyCode == 82) {
+              dy = 12;
+            }
+            else if (e.keyCode == 27) {
+              alert("GAME PAUSED");
+            }
+        }
+
+        function keyUpHandler(e) {
+            if(e.keyCode == 39) {
+                rightPressed = false;
+            }
+            else if(e.keyCode == 37) {
+                leftPressed = false;
+            }
+        }
+
+        function drawBall() {
+            ctx.beginPath();
+            ctx.fillStyle = "green";
+            ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawBall1() {
+          ctx.beginPath();
+          ctx.fillstyle = "yellow";
+          ctx.arc(x1, y1, ballRadius, 0, Math.PI*2);
+          ctx.fill();
+          ctx.closePath();
+        }
+
+        function drawBall2() {
+          ctx.beginPath();
+          ctx.arc(x2, y2, ballRadius, 0, Math.PI*2);
+          ctx.fillstyle = "red";
+          ctx.fill();
+          ctx.closePath();
+        }
+
+        function drawPaddle() {
+          ctx.beginPath();
+          ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+          ctx.fillStyle = "#FFFFFF";
+          ctx.fill();
+          ctx.closePath();
+        }
+
+        function drawScore() {
+            ctx.font = "100px Arial";
+            ctx.fillStyle = "#C9C9C9";
+            ctx.fillText(score, 8, 80);
+        }
+
+        function gameEnd() {
+            alert("GAME OVER !!\
+            Your score: "+score);
+            document.location.reload();
+        }
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBall();
+            function ballBall1() {
+              if (score > 2000) {
+                drawBall1();
+                x1 += dx1;
+                y1 += dy1;
+              }
+            }
+            function ballBall2() {
+              if (score > 4000) {
+                drawBall2();
+                x2 += dx2;
+                y2 += dy2;
+              }
+            }
+            ballBall1();
+            ballBall2();
+            drawPaddle();
+            drawScore();
+
+            if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+                dx = -dx;
+            }
+            if(y + dy < ballRadius) {
+                dy = -dy;
+            }
+            else if(y + dy > canvas.height-ballRadius) {
+                if(x > paddleX && x < paddleX + paddleWidth) {
+                    dy = -dy;
+                }
+                else {
+                  gameEnd();
+                }
+            }
+
+            if(x1 + dx1 > canvas.width-ballRadius || x1 + dx1 < ballRadius) {
+                dx1 = -dx1;
+            }
+            if(y1 + dy1 < ballRadius) {
+                dy1 = -dy1;
+            }
+            else if(y1 + dy1 > canvas.height-ballRadius) {
+                if(x1 > paddleX && x1 < paddleX + paddleWidth) {
+                    dy1 = -dy1;
+                }
+                else {
+                  gameEnd();
+                }
+            }
+
+            if(x2 + dx2 > canvas.width-ballRadius || x2 + dx2 < ballRadius) {
+                dx2 = -dx2;
+            }
+            if(y2 + dy2 < ballRadius) {
+                dy2 = -dy2;
+            }
+            else if(y2 + dy2 > canvas.height-ballRadius) {
+                if(x2 > paddleX && x2 < paddleX + paddleWidth) {
+                    dy2 = -dy2;
+                }
+                else {
+                  gameEnd();
+                }
+            }
+
+            if(rightPressed && paddleX < canvas.width-paddleWidth) {
+                paddleX += 5;
+            }
+            else if(leftPressed && paddleX > 0) {
+                paddleX -= 5;
+            }
+
+            x += dx;
+            y += dy;
+            score++;
+        }
+
+        setInterval(draw, 10);
+      }
+
+    </script>
+  </html>
